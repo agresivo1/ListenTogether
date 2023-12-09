@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #101010;
+  color: white;
+}
+
+a {
+  color: wheat;
+}
+.notification {
+  color: green;
+}
+.notificationRED {
+  color: red;
+}
+#char-counter {
+  color: while;
+}
+
+#char-counter.good {
+  color: green;
+}
+
+#char-counter.too-short {
+  color: red;
+}
+
+#char-counter.too-long {
+  color: red;
+}
+#char-counter.zero {
+  color: while;
+}
+#user-input {
+  text-align: center;
+  margin: 20px;
+}
+
+#user-input label,
+#user-input input,
+#user-input button {
+  margin: 5px;
+}
+
+#users-panel,
+#video-panel,
+#playlist-panel {
+  flex: 1; /* Każdy panel zajmuje równe miejsce */
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+#users-panel {
+  border: 2px solid green;
+  border-radius: 25px;
+  position: fixed;
+  left: 100px;
+  top: 0;
+  font-size: 18px;
+}
+
+#video-panel {
+  min-height: 410px;
+  text-align: center;
+  border: 2px solid wheat;
+  border-radius: 25px;
+}
+#video-panel video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* lub object-fit: cover; w zależności od preferencji */
+}
+
+#playlist-panel {
+  border: 2px solid white;
+  border-radius: 25px;
+}
